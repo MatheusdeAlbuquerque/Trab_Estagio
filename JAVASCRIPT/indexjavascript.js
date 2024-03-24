@@ -39,11 +39,8 @@ function verificacaoCampoNumero(id, iderronum) {
     }
 }
 
-//!true == false
-//!false == true
-function salvar() {
-    if(!valid) return;
 
+function salvar() {
     var arrayPessoas=[];
     if(JSON.parse(localStorage.getItem("pessoas")) != null){
         arrayPessoas = JSON.parse(localStorage.getItem("pessoas"));
@@ -101,8 +98,6 @@ function editar(posicao) {
 }
 
 function salvarEdicao(posicao) {
-    if(!valid) return;
-
     var arrayPessoas=[];
     if(JSON.parse(localStorage.getItem("pessoas")) != null){
         arrayPessoas = JSON.parse(localStorage.getItem("pessoas"));
@@ -126,7 +121,7 @@ function salvarEdicao(posicao) {
 }
 
 
-//excl
+//exclir
 function excluir(posicao) {
     var arrayPessoas=[];
     if(JSON.parse(localStorage.getItem("pessoas")) != null){
